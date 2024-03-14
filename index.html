@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,20 +18,20 @@
 
         <h6 style="text-align: justify;">Indeks massa tubuh adalah ukuran yang digunakan untuk mengetahui status gizi
             seseorang yang didapatkan dari perbandingan berat dan tinggi badan. </h6>
-        <form><!--tampilan form-->
+        <form> <!--tampilan form-->
             <p class="inputs">
                 <label>Umur : </label>
-                <input type="number" id="umur" min="10" max="70">
+                <input type="number" id="umur" min="10" max="70" required>
             </p>
             <span class="gender">
-                <span> <input type="radio" name="radio" id="lk">
+                <span> <input type="radio" name="radio" id="lk" required>
                     <span class="text">Laki-laki</span>
                     <span class="checkmark"></span>
                 </span>
 
 
                 <span>
-                    <input type="radio" name="radio" id="p">
+                    <input type="radio" name="radio" id="p" required>
                     <span class="text">Perempuan</span>
                     <span class="checkmark"></span>
                 </span>
@@ -39,21 +39,22 @@
             </span>
             <p class="inputs">
                 <label>Tinggi Badan (cm): </label>
-                <input type="number" id="height" min="50" max="230">
+                <input type="number" id="height" min="50" max="230" required>
             </p>
             <p class="inputs">
                 <label>Berat Badan (kg): </label>
-                <input type="number" id="weight" min="30" max="200">
+                <input type="number" id="weight" min="30" max="200" required>
             </p>
-
-            <button class="calcBtn">Calculate</button>
+            <!--Validasi inputan menggunakan atribut required-->
+            <button class="htngBtn">Hitung IMT</button>
+            <button class="rstBtn">Reset</button>
             <div style="margin-top: 20px;">Hasil IMT Anda: <p id="results"></p>
             </div>
-            <p id="message"></p>
+            <p id="message"></p><!--menampilkan hasil-->
 
         </form>
     </div>
-
+<!--Javascript-->
     <script src="js/script.js"></script>
 </body>
 
