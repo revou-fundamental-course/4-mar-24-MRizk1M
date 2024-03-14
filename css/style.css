@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #BDCAFF;
+    background: #f8a968;
 }
 /*css container utama*/
 .container {
@@ -37,7 +37,7 @@ body {
 #results {
     font-size: 20px;
     text-align: center;
-    color: blue;
+    color: rgb(255, 89, 0);
 }
 /*format css tombol */
 .htngBtn {
@@ -47,7 +47,7 @@ body {
 
     border-radius: 5px;
     border-style: none;
-    background: #5070f3;
+    background: #f8a968;
     color: #fff;
     cursor: pointer;
     font-size: 15px;
@@ -61,7 +61,7 @@ body {
 
     border-radius: 5px;
     border-style: none;
-    background: #5070f3;
+    background: #f8a968;
     color: #fff;
     cursor: pointer;
     font-size: 15px;

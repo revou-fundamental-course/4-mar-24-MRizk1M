@@ -20,6 +20,10 @@
             seseorang yang didapatkan dari perbandingan berat dan tinggi badan. </h6>
         <form> <!--tampilan form-->
             <p class="inputs">
+                <label>Nama : </label>
+                <input type="text" id="tbNama"maxlength="" required>
+            </p>
+            <p class="inputs">
                 <label>Umur : </label>
                 <input type="text" id="tbUmur" min="10" max="70" maxlength="2" required>
             </p>
@@ -45,7 +49,9 @@
             <!--Validasi inputan menggunakan atribut required-->
             <button class="htngBtn">Hitung IMT</button>
             <input type="reset" value="Reset" class="rstBtn">
-            <div style="margin-top: 20px;">Hasil IMT Anda: <p id="results"></p>
+          
+            Hai  <span id="showNama"></span><!--menampilkan Nama-->
+            <div style="margin-top: 5px;">Hasil IMT Anda: <p id="results"></p>
             </div>
             <p id="message"></p><!--menampilkan hasil-->
 
