@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Kalkulator IMT</title>
+</head>
+
+<body>
+    <div class="container"> <!---box utama-->
+        <h2 style="text-align: center;">Kalkulator IMT</h2>
+
+        <h6 style="text-align: justify;">Indeks massa tubuh adalah ukuran yang digunakan untuk mengetahui status gizi
+            seseorang yang didapatkan dari perbandingan berat dan tinggi badan. </h6>
+        <form><!--tampilan form-->
+            <p class="inputs">
+                <label>Umur : </label>
+                <input type="number" id="umur" min="10" max="70">
+            </p>
+            <span class="gender">
+                <span> <input type="radio" name="radio" id="lk">
+                    <span class="text">Laki-laki</span>
+                    <span class="checkmark"></span>
+                </span>
+
+
+                <span>
+                    <input type="radio" name="radio" id="p">
+                    <span class="text">Perempuan</span>
+                    <span class="checkmark"></span>
+                </span>
+
+            </span>
+            <p class="inputs">
+                <label>Tinggi Badan (cm): </label>
+                <input type="number" id="height" min="50" max="230">
+            </p>
+            <p class="inputs">
+                <label>Berat Badan (kg): </label>
+                <input type="number" id="weight" min="30" max="200">
+            </p>
+
+            <button class="calcBtn">Calculate</button>
+            <div style="margin-top: 20px;">Hasil IMT Anda: <p id="results"></p>
+            </div>
+            <p id="message"></p>
+
+        </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
