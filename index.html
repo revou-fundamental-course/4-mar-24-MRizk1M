@@ -21,40 +21,37 @@
         <form> <!--tampilan form-->
             <p class="inputs">
                 <label>Umur : </label>
-                <input type="number" id="umur" min="10" max="70" required>
+                <input type="text" id="tbUmur" min="10" max="70" maxlength="2" required>
             </p>
             <span class="gender">
                 <span> <input type="radio" name="radio" id="lk" required>
-                    <span class="text">Laki-laki</span>
-                    <span class="checkmark"></span>
+                    <label for="lk"><span class="text">Laki-laki</span></label>
                 </span>
-
 
                 <span>
                     <input type="radio" name="radio" id="p" required>
-                    <span class="text">Perempuan</span>
-                    <span class="checkmark"></span>
+                    <label for="p"><span class="text">Perempuan</span></label>
                 </span>
 
             </span>
             <p class="inputs">
                 <label>Tinggi Badan (cm): </label>
-                <input type="number" id="height" min="50" max="230" required>
+                <input type="text" id="tbTinggi" min="50" max="230" maxlength="3" required>
             </p>
             <p class="inputs">
                 <label>Berat Badan (kg): </label>
-                <input type="number" id="weight" min="30" max="200" required>
+                <input type="text" id="tbBerat" min="30" max="200" maxlength="3" required>
             </p>
             <!--Validasi inputan menggunakan atribut required-->
             <button class="htngBtn">Hitung IMT</button>
-            <button class="rstBtn">Reset</button>
+            <input type="reset" value="Reset" class="rstBtn">
             <div style="margin-top: 20px;">Hasil IMT Anda: <p id="results"></p>
             </div>
             <p id="message"></p><!--menampilkan hasil-->
 
         </form>
     </div>
-<!--Javascript-->
+    <!--Javascript-->
     <script src="js/script.js"></script>
 </body>
 
